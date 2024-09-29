@@ -15,6 +15,7 @@ body {
 }
 
 .movie-section h2 {
+    margin-left: 26px;
     font-size: 24px;
     margin-bottom: 15px;
     border-bottom: 1px solid black;
