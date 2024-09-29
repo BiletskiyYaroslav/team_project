@@ -1,6 +1,6 @@
 body {
     font-family: "Lexend", sans-serif;
-    background-color: #f06292;
+    background-color: #E78AC5;
     color: black;
     margin: 0;
     padding: 0;
@@ -11,6 +11,7 @@ body {
 }
 .movie-section {
     margin-bottom: 40px;
+
 }
 
 .movie-section h2 {
@@ -20,6 +21,8 @@ body {
 }
 
 .movie-grid {
+    margin-left: 112px;
+    margin-right: 113px;
     display: flex;
     justify-content: space-between;
     gap: 10px;
