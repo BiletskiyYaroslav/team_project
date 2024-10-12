@@ -136,3 +136,11 @@ footer {
     margin: 0 10px;
     font-size:20px;
 }
+
+.contacts:hover{
+    text-decoration: underline;
+}
+
+.menu-item:hover{
+    text-decoration: underline;
+}

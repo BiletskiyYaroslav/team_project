@@ -58,7 +58,7 @@ input{
 
 .tittle-section{
     margin-left: 26px;
-    font-size: 24px;
+    font-size: 34px;
     margin-bottom: 15px;
     border-bottom: 1px solid black;
 }
@@ -72,15 +72,14 @@ input{
 }
 
 .movie-item {
-    width: 150px;
+    width: 250px;
     text-align: center;
     justify-content: center;
 }
 
 .movie-item img {
     border: 1px solid black; 
-    width: 100%;
-    height: 200px;
+    height: 300px;
     background-color: #e0e0e0;
 }
 
@@ -105,4 +104,16 @@ footer {
     text-decoration: none;
     margin: 0 10px;
     font-size:20px;
+}
+
+.movie-item p:hover{
+    text-decoration: underline;
+}
+
+.menu-item:hover{
+    text-decoration: underline;
+}
+
+.contacts:hover{
+    text-decoration: underline;
 }
