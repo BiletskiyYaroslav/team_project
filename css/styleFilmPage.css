@@ -66,6 +66,10 @@ input{
     display: flex;
     flex-direction:row;
     width: 1300px;
+    padding:10px;
+    border: #6a006a solid 6px;
+    border-radius: 8px;
+    background-color: #E389D5;
 }
 
 .movie-poster {
@@ -86,7 +90,7 @@ input{
 }
 
 .movie-title {
-    font-size: 28px;
+    font-size: 34px;
     margin-bottom: 10px;
 }
 

@@ -26,8 +26,8 @@ function getMovieInfoHtml(film) {
                 <ul class="movie-stats">
                     <li>Release date: ${film.release_date}</li>
                     <li>Rating: ${film.vote_average}</li>
-                    <li>Budget:</li>
-                    <li>Runtime:</li>
+                    <li>Vote count: ${film.vote_count}</li>
+                    <li>Original language: ${film.original_language}</li>
                 </ul>
                 <h3 class="movie-overview-title">Overview</h3>
                 <p class="movie-overview">${film.overview}</p>
