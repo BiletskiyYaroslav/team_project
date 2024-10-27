@@ -1,16 +1,15 @@
-const movieDetails = document.querySelector('.movie-details')
+const movieDetails = document.querySelector('.movie-details');
+const searchInput = document.querySelector('#search-input');
+let films = [];
 
+// Fetch the films
 fetch('https://api.themoviedb.org/3/movie/popular?api_key=6372b5c6c883835103fe4b91ebcbf9cb')
-    .then(function(result) {
-        return result.json();
+    .then(result => result.json())
+    .then(response => {
+        films = response.results;
+        displayMovies(films);
     })
-    .then(function(response) {
-        const films = response.results;
-        films.forEach(function(film) {
-            movieDetails.innerHTML += getMovieInfoHtml(film);
-        });
-    })
-    .catch(function(error) {
+    .catch(error => {
         console.error('Error fetching the films:', error);
     });
 
@@ -33,7 +32,19 @@ function getMovieInfoHtml(film) {
                 <p class="movie-overview">${film.overview}</p>
             </div>
         </div>
-    </div>        
-
-  `
+    </div>
+    `;
 }
+
+function displayMovies(movies) {
+    movieDetails.innerHTML = movies.map(film => getMovieInfoHtml(film)).join('');
+}
+
+searchInput.addEventListener('input', () => {
+    const searchText = searchInput.value.toLowerCase();
+    const filteredMovies = films.filter(film =>
+        film.title.toLowerCase().includes(searchText)
+    );
+    displayMovies(filteredMovies);
+});
+
