@@ -123,6 +123,10 @@ footer {
     justify-content: space-between;
     height: 180px;
     margin: 0px;
+    position:absolute ;
+    bottom:0;
+    left:0;
+    right:0;
 }
 
 .contacts{
@@ -160,4 +164,3 @@ footer {
 .film-card:hover{
     transform: scale(1.1);
 }
-
